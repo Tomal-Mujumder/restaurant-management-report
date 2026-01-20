@@ -1,0 +1,424 @@
+<mxfile host="app.diagrams.net" modified="2026-01-21T12:00:00.000Z" agent="draw.io" version="22.1.11">
+  <diagram name="Banglar Heshel ER Diagram" id="banglar-heshel-er">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- User Entity -->
+        <mxCell id="user" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- User Attributes -->
+        <mxCell id="user-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-username" value="username" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="260" y="190" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-email" value="email" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="260" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-password" value="password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="260" y="290" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-isAdmin" value="isAdmin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user-isVerified" value="isVerified" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- User Attribute Connections -->
+        <mxCell id="edge-user-id" edge="1" parent="1" source="user" target="user-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-username" edge="1" parent="1" source="user" target="user-username">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-email" edge="1" parent="1" source="user" target="user-email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-password" edge="1" parent="1" source="user" target="user-password">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-isAdmin" edge="1" parent="1" source="user" target="user-isAdmin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-isVerified" edge="1" parent="1" source="user" target="user-isVerified">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- FoodItem Entity -->
+        <mxCell id="fooditem" value="FoodItem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1000" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- FoodItem Attributes -->
+        <mxCell id="food-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="food-name" value="foodName" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="food-desc" value="description" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="220" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="food-price" value="price" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="food-images" value="images" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="food-category" value="category" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- FoodItem Attribute Connections -->
+        <mxCell id="edge-food-id" edge="1" parent="1" source="fooditem" target="food-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-food-name" edge="1" parent="1" source="fooditem" target="food-name">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-food-desc" edge="1" parent="1" source="fooditem" target="food-desc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-food-price" edge="1" parent="1" source="fooditem" target="food-price">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-food-images" edge="1" parent="1" source="fooditem" target="food-images">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-food-category" edge="1" parent="1" source="fooditem" target="food-category">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Order Entity -->
+        <mxCell id="order" value="Order" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Order Attributes -->
+        <mxCell id="order-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="order-userId" value="userId (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="410" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="order-total" value="totalAmount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="460" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="order-token" value="tokenNumber" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="390" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="order-checked" value="isChecked" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="440" width="90" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Order Attribute Connections -->
+        <mxCell id="edge-order-id" edge="1" parent="1" source="order" target="order-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-order-userId" edge="1" parent="1" source="order" target="order-userId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-order-total" edge="1" parent="1" source="order" target="order-total">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-order-token" edge="1" parent="1" source="order" target="order-token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-order-checked" edge="1" parent="1" source="order" target="order-checked">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Payment Entity -->
+        <mxCell id="payment" value="Payment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Payment Attributes -->
+        <mxCell id="payment-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-orderId" value="orderId (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="610" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-transId" value="transactionId" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="660" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-status" value="status" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="590" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-amount" value="amount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="640" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Payment Attribute Connections -->
+        <mxCell id="edge-payment-id" edge="1" parent="1" source="payment" target="payment-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-payment-orderId" edge="1" parent="1" source="payment" target="payment-orderId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-payment-transId" edge="1" parent="1" source="payment" target="payment-transId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-payment-status" edge="1" parent="1" source="payment" target="payment-status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-payment-amount" edge="1" parent="1" source="payment" target="payment-amount">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Review Entity -->
+        <mxCell id="review" value="Review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1300" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Review Attributes -->
+        <mxCell id="review-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="review-foodId" value="foodId (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="410" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="review-userId" value="userId (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="460" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="review-rating" value="rating" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="390" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="review-comment" value="comment" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="440" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Review Attribute Connections -->
+        <mxCell id="edge-review-id" edge="1" parent="1" source="review" target="review-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-review-foodId" edge="1" parent="1" source="review" target="review-foodId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-review-userId" edge="1" parent="1" source="review" target="review-userId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-review-rating" edge="1" parent="1" source="review" target="review-rating">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-review-comment" edge="1" parent="1" source="review" target="review-comment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Stock Entity -->
+        <mxCell id="stock" value="Stock" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1000" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stock Attributes -->
+        <mxCell id="stock-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="10" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stock-foodId" value="foodId (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="60" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stock-quantity" value="quantity" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="110" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Stock Attribute Connections -->
+        <mxCell id="edge-stock-id" edge="1" parent="1" source="stock" target="stock-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-stock-foodId" edge="1" parent="1" source="stock" target="stock-foodId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-stock-quantity" edge="1" parent="1" source="stock" target="stock-quantity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Reservation Entity -->
+        <mxCell id="reservation" value="Reservation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Reservation Attributes -->
+        <mxCell id="res-id" value="_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="10" y="340" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="res-name" value="customerName" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="10" y="390" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="res-email" value="email" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="10" y="440" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="res-partySize" value="partySize" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="240" y="380" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="res-date" value="reservationDate" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="240" y="430" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Reservation Attribute Connections -->
+        <mxCell id="edge-res-id" edge="1" parent="1" source="reservation" target="res-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-res-name" edge="1" parent="1" source="reservation" target="res-name">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-res-email" edge="1" parent="1" source="reservation" target="res-email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-res-partySize" edge="1" parent="1" source="reservation" target="res-partySize">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-res-date" edge="1" parent="1" source="reservation" target="res-date">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Category Entity -->
+        <mxCell id="category" value="Category" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1300" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Supplier Entity -->
+        <mxCell id="supplier" value="Supplier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FF;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1000" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- External Services -->
+        <mxCell id="sslcommerz" value="SSLCommerz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E1;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1000" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cloudinary" value="Cloudinary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E1;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1300" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nodemailer" value="Nodemailer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E1;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="firebase" value="Firebase" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E1;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <!-- User -> Order -->
+        <mxCell id="rel-user-order" value="places" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="user" target="order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- User -> Review -->
+        <mxCell id="rel-user-review" value="writes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="user" target="review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="230" />
+              <mxPoint x="700" y="230" />
+              <mxPoint x="700" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User -> Reservation -->
+        <mxCell id="rel-user-reservation" value="makes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="user" target="reservation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Order -> Payment -->
+        <mxCell id="rel-order-payment" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="order" target="payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Order -> FoodItem -->
+        <mxCell id="rel-order-food" value="contains" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="order" target="fooditem">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="430" />
+              <mxPoint x="900" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- FoodItem -> Stock -->
+        <mxCell id="rel-food-stock" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="fooditem" target="stock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- FoodItem -> Review -->
+        <mxCell id="rel-food-review" value="receives" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="fooditem" target="review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="230" />
+              <mxPoint x="1200" y="350" />
+              <mxPoint x="1360" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- FoodItem -> Category -->
+        <mxCell id="rel-food-category" value="belongsTo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="fooditem" target="category">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- External Service Relationships (Dotted Lines) -->
+        <!-- SSLCommerz -> Payment -->
+        <mxCell id="rel-ssl-payment" value="processes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;dashed=1;" edge="1" parent="1" source="sslcommerz" target="payment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="830" />
+              <mxPoint x="950" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Cloudinary -> FoodItem -->
+        <mxCell id="rel-cloud-food" value="stores" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;dashed=1;" edge="1" parent="1" source="cloudinary" target="fooditem">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1250" y="80" />
+              <mxPoint x="1250" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nodemailer -> User -->
+        <mxCell id="rel-node-user" value="sends OTP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;dashed=1;" edge="1" parent="1" source="nodemailer" target="user">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="630" />
+              <mxPoint x="320" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nodemailer -> Order -->
+        <mxCell id="rel-node-order" value="confirms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;dashed=1;" edge="1" parent="1" source="nodemailer" target="order">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="630" />
+              <mxPoint x="320" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Firebase -> User -->
+        <mxCell id="rel-fire-user" value="authenticates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;dashed=1;" edge="1" parent="1" source="firebase" target="user">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="80" />
+              <mxPoint x="320" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
